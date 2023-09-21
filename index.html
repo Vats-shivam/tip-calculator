@@ -29,6 +29,13 @@
     <div class="output">
     </div>
   </div>
-  
 </body>
+<script>
+  const input =document.querySelector("#input")
+  const button = document.querySelector("#submit")
+  const output = document.querySelector(".output")
+  button.addEventListener("click",function(){
+    output.innerHTML=`Your Tip is ${input.value*0.1} <br>Your total bill: ${+(input.value)+input.value*0.1} `
+  })
+</script>
 </html>
